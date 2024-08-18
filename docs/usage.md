@@ -9,9 +9,9 @@
    ```
 
 2. Run the main script:
-```bash
-sudo python3 network_scanner/main.py
-```
+   ```bash
+   sudo python3 network_scanner/main.py
+   ```
 
 3. **Follow On-Screen Instructions**: 
    - Choose an active network interface.
