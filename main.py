@@ -66,7 +66,15 @@ def get_local_network_info() ->str :
 def nmap(ip):
 
     """Scans The TCP ports of the Target IP"""
-    print(f"Scanning TCP ports on {ip}" )
+    print(f"\nScanning TCP ports on {ip}\n" )
+    result = bash(f"nmap -T4 -p1-65535 {ip} | grep 'open'").splitlines()
+    ports = [] # Empty list for storing open ports
+
+    for port in result:
+        print(port)
+        ports.append(port.split("/")[0])
+    print(*ports)
+
 
 # Clear screen 
 os.system('clear')
@@ -86,7 +94,7 @@ while True:
         ip = ips[i]
         print(f"{i+1} - {ip}")
     try:
-        target_ip_index = int(input(f"\nEnter an option 1 - {len(ips)}, or 0 to Exit the script:\n"))
+        target_ip_index = int(input(f"\nEnter an option 1 - {len(ips)}, or 0 to Exit the script: "))
         break
     except ValueError:
         os.system('clear')
