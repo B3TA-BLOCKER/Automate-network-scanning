@@ -1,6 +1,17 @@
-# Automate Network Scanning 🚀
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-Welcome to **Automate Network Scanning** – a powerful Python tool designed to streamline the process of network discovery and port scanning. This tool automates the tedious tasks of discovering devices on your network and performing comprehensive port scans to identify open ports.
+<p align="center">
+  <h1 align="center">Automate Network Scanning 🚀</h1>
+</p>
+
+
+
+<p align="center">
+  <strong>A powerful Python tool designed to streamline the process of network discovery and port scanning. This tool automates the tedious tasks of discovering devices on your network and performing comprehensive port scans to identify open ports.</strong>
+</p>
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Features 🌟
 
@@ -8,6 +19,8 @@ Welcome to **Automate Network Scanning** – a powerful Python tool designed to 
 - **Port Scanning**: Performs a detailed scan of all TCP ports on discovered devices to find open ports.
 - **Intense Nmap Scan**: Runs an intensive Nmap scan on detected open ports and logs results.
 - **User-Friendly Interface**: Interactive command-line interface to guide you through the scanning process.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Project Structure 📂
 
@@ -48,6 +61,8 @@ Automate-network-scanning
 - **`setup.py`**: Setup script for installing the package.
 - **`tests/`**: Unit tests for various components of the project.
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## Documentation 📚
 
 For detailed information on installation, usage, and configuration, please refer to the documentation:
@@ -55,6 +70,8 @@ For detailed information on installation, usage, and configuration, please refer
 - [Introduction](docs/index.md)
 - [Installation Guide](docs/installation.md)
 - [Usage Instructions](docs/usage.md)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Example Usage 💡
 
@@ -81,6 +98,8 @@ if __name__ == "__main__":
     example_usage()
 ```
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## Contributing 🤝
 
 I welcome contributions to improve this tool. If you'd like to contribute, please:
@@ -91,9 +110,13 @@ I welcome contributions to improve this tool. If you'd like to contribute, pleas
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## License 📜
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Contact 📫
 
