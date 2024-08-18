@@ -1,13 +1,19 @@
 from network_scanner.main import network_interface_info, get_local_network_info, nmap
 
 
-def main():
-    print("Network Interface Info:")
-    print(network_interface_info())
+def example_usage():
+    interfaces = network_interface_info()
+    if not interfaces:
+        print("No network interfaces found!")
+        return
 
-    print("\nLocal Network Info:")
-    print(get_local_network_info())
-
+    interface = interfaces[0]  # Example usage with the first interface
+    subnet = get_local_network_info(interface)
+    print(f"Scanning subnet: {subnet}")
+    ips = nmap(subnet)
+    print("Discovered IPs:")
+    for ip in ips:
+        print(ip)
 
 if __name__ == "__main__":
-    main()
+    example_usage()
