@@ -48,10 +48,12 @@ def network_interface_info():
 
 def get_local_network_info() :
 
-    """Gets the IP address of the device"""
+    """Gets Subnet"""
     interface = network_interface_info()
     command = f"ifconfig {interface} | grep -A 1 'inet ' | awk '$1 == \"inet\" {{print $2}}'"
     local_ip = subprocess.check_output(command, shell=True).decode('utf-8').strip()
+    subnet = '.'.join(local_ip.split('.')[:-1]) + '.0/24'
+    print(subnet)
 
 
 os.system('clear')
