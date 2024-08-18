@@ -63,6 +63,11 @@ def get_local_network_info() ->str :
     return subnet
 
 
+def nmap(ip):
+
+    """Scans The TCP ports of the Target IP"""
+    print(f"Scanning TCP ports on {ip}" )
+
 # Clear screen 
 os.system('clear')
 subnet =  get_local_network_info()
@@ -71,10 +76,21 @@ os.system('clear')
 print(f"\nRunning NetDiscover on local subnet : {subnet}\n")
 ips = bash(f"sudo netdiscover -P -r {subnet} | grep '1' | cut -d ' ' -f2 ").splitlines()
 
-for i in range(0,len(ips)):
-    if i == 0 :
-            print(f"{i} - Exit")
-    ip = ips[i]
-    print(f"{i+1} - {ip}")
 
+# Taking the user input for the target ip
+while True:
+    print("List of IPs Discovered:\n")
+    for i in range(0,len(ips)):
+        if i == 0 :
+            print(f"{i} - Exit")
+        ip = ips[i]
+        print(f"{i+1} - {ip}")
+    try:
+        target_ip_index = int(input(f"\nEnter an option 1 - {len(ips)}, or 0 to Exit the script:\n"))
+        break
+    except ValueError:
+        os.system('clear')
+        print("Invalid input. Please enter an integer.\n")
+
+nmap(ips[target_ip_index - 1])
 
