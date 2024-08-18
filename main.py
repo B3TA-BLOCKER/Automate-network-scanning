@@ -9,8 +9,12 @@ import os
 import subprocess
 import psutil  # provides an easy way to interact with system and process utilities
 
+# The function automates running shell commands and retrieving their output as a cleaned-up string.
+def bash(command):
+    return subprocess.check_output(command, shell=True).decode('utf-8').strip()
 
-def network_interface_info():
+
+def network_interface_info() ->str :
 
     """Returns the name of the Network interface to be used."""
     # Get the network interfaces and their statuses
@@ -45,15 +49,14 @@ def network_interface_info():
     return list_of_interfaces_running[choice - 1]
 
 
-
-def get_local_network_info() :
+def get_local_network_info() ->str :
 
     """Gets Subnet"""
     interface = network_interface_info()
-    command = f"ifconfig {interface} | grep -A 1 'inet ' | awk '$1 == \"inet\" {{print $2}}'"
-    local_ip = subprocess.check_output(command, shell=True).decode('utf-8').strip()
+    local_ip = bash(command=f"ifconfig {interface} | grep -A 1 'inet ' | awk '$1 == \"inet\" {{print $2}}'")
     subnet = '.'.join(local_ip.split('.')[:-1]) + '.0/24'
-    print(subnet)
+    return subnet
+
 
 
 os.system('clear')
