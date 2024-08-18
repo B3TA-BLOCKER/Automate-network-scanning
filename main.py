@@ -73,7 +73,12 @@ def nmap(ip):
     for port in result:
         print(port)
         ports.append(port.split("/")[0])
-    print(*ports)
+    
+    port_list = ",".join(ports)
+    print("\nRunning Intence Scan on Open Ports .... \n")
+    bash(f"nmap -T4 -A -sV -p{port_list} -oN output.txt {ip}")
+    print(f"Nmap intence scan results logged in output.txt")
+    exit()
 
 
 # Clear screen 
@@ -100,5 +105,8 @@ while True:
         os.system('clear')
         print("Invalid input. Please enter an integer.\n")
 
+if target_ip_index == 0:
+    print("Exiting ... ")
+    exit()
 nmap(ips[target_ip_index - 1])
 
