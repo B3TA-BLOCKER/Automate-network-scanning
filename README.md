@@ -23,8 +23,6 @@ Automate-network-scanning
    │   └── example_usage.py
    ├── network_scanner
    │   ├── __init__.py
-   │   ├── bash_commands
-   │   │   └── command_script.sh
    │   ├── main.py
    │   ├── scanner.py
    │   └── utils.py
@@ -43,7 +41,6 @@ Automate-network-scanning
 - **`examples/`**: Example scripts demonstrating how to use the tool.
 - **`network_scanner/`**: Core package of the project containing the main functionality.
   - **`__init__.py`**: Initializes the package.
-  - **`bash_commands/`**: Directory containing shell scripts used by the tool.
   - **`main.py`**: Contains primary functions for network scanning.
   - **`scanner.py`**: Additional scanning-related functions.
   - **`utils.py`**: Utility functions used across the package.
