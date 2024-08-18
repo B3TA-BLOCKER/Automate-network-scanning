@@ -23,7 +23,7 @@ For detailed information on installation, usage, and configuration, please refer
 Here's a brief example of how you might use the tool in a script:
 
 ```python
-from network_scanner.scanner import network_interface_info, get_local_network_info, nmap_scan
+from network_scanner.main import network_interface_info, get_local_network_info, nmap_scan
 
 def example_usage():
     interfaces = network_interface_info()
