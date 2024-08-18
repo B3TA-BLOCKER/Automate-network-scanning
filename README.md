@@ -9,6 +9,49 @@ Welcome to **Automate Network Scanning** – a powerful Python tool designed to 
 - **Intense Nmap Scan**: Runs an intensive Nmap scan on detected open ports and logs results.
 - **User-Friendly Interface**: Interactive command-line interface to guide you through the scanning process.
 
+## Project Structure 📂
+
+Here's an overview of the project structure:
+
+```
+.
+├── LICENSE
+├── README.md
+├── docs
+│   ├── index.md
+│   ├── installation.md
+│   └── usage.md
+├── examples
+│   └── example_usage.py
+├── network_scanner
+│   ├── __init__.py
+│   ├── bash_commands
+│   │   └── command_script.sh
+│   ├── main.py
+│   ├── scanner.py
+│   └── utils.py
+├── requirements.txt
+├── setup.py
+└── tests
+    ├── test_import.py
+    ├── test_main.py
+    ├── test_scanner.py
+    └── test_utils.py
+```
+
+- **`LICENSE`**: License file for the project.
+- **`README.md`**: This file containing an overview and instructions.
+- **`docs/`**: Documentation files, including installation and usage guides.
+- **`examples/`**: Example scripts demonstrating how to use the tool.
+- **`network_scanner/`**: Core package of the project containing the main functionality.
+  - **`__init__.py`**: Initializes the package.
+  - **`bash_commands/`**: Directory containing shell scripts used by the tool.
+  - **`main.py`**: Contains primary functions for network scanning.
+  - **`scanner.py`**: Additional scanning-related functions.
+  - **`utils.py`**: Utility functions used across the package.
+- **`requirements.txt`**: Lists Python dependencies.
+- **`setup.py`**: Setup script for installing the package.
+- **`tests/`**: Unit tests for various components of the project.
 
 ## Documentation 📚
 
@@ -60,5 +103,3 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ## Contact 📫
 
 For any questions or feedback, please reach out to [B3TA-BLOCKER](https://github.com/B3TA-BLOCKER).
-
-Happy Scanning! 🔍
