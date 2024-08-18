@@ -11,32 +11,30 @@ Welcome to **Automate Network Scanning** – a powerful Python tool designed to 
 
 ## Project Structure 📂
 
-Here's an overview of the project structure:
-
 ```
-.
-├── LICENSE
-├── README.md
-├── docs
-│   ├── index.md
-│   ├── installation.md
-│   └── usage.md
-├── examples
-│   └── example_usage.py
-├── network_scanner
-│   ├── __init__.py
-│   ├── bash_commands
-│   │   └── command_script.sh
-│   ├── main.py
-│   ├── scanner.py
-│   └── utils.py
-├── requirements.txt
-├── setup.py
-└── tests
-    ├── test_import.py
-    ├── test_main.py
-    ├── test_scanner.py
-    └── test_utils.py
+Automate-network-scanning
+   ├── LICENSE
+   ├── README.md
+   ├── docs
+   │   ├── index.md
+   │   ├── installation.md
+   │   └── usage.md
+   ├── examples
+   │   └── example_usage.py
+   ├── network_scanner
+   │   ├── __init__.py
+   │   ├── bash_commands
+   │   │   └── command_script.sh
+   │   ├── main.py
+   │   ├── scanner.py
+   │   └── utils.py
+   ├── requirements.txt
+   ├── setup.py
+   └── tests
+       ├── test_import.py
+       ├── test_main.py
+       ├── test_scanner.py
+       └── test_utils.py
 ```
 
 - **`LICENSE`**: License file for the project.
