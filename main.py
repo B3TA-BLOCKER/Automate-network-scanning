@@ -4,7 +4,7 @@
 
 #!/usr/bin/python 
 
-# impoting the required  moudles
+# importing the required modules
 import os
 import subprocess
 import psutil  # provides an easy way to interact with system and process utilities
@@ -28,7 +28,7 @@ def network_interface_info() ->str :
 
     # Iterate through the interfaces and check which ones are up
     for interface, stats in interfaces.items():
-        if stats.isup: # if the interfface is up and running it will be appended in the list "list_of_interfaces_running"
+        if stats.isup: # if the interface is up and running it will be appended in the list "list_of_interfaces_running"
             list_of_interfaces_running.append(interface)
     
     iterations = len(list_of_interfaces_running)
@@ -39,7 +39,7 @@ def network_interface_info() ->str :
             for i in range(iterations):
                 print(f"{i+1}. {list_of_interfaces_running[i]}")
             try:
-                print("\nChoose One of the foillowing Network Interface :")
+                print("\nChoose One of the following Network Interface :")
                 choice = int(input("-> "))
                 
                 if choice > iterations or choice < 1:
@@ -75,9 +75,9 @@ def nmap(ip):
         ports.append(port.split("/")[0])
     
     port_list = ",".join(ports)
-    print("\nRunning Intence Scan on Open Ports .... \n")
+    print("\nRunning Intense Scan on Open Ports .... \n")
     bash(f"nmap -T4 -A -sV -p{port_list} -oN output.txt {ip}")
-    print(f"Nmap intence scan results logged in output.txt")
+    print(f"Nmap Intense scan results logged in output.txt")
     exit()
 
 
