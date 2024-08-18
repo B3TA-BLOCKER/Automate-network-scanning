@@ -8,7 +8,7 @@ https://www.youtube.com/@sunnyscript3517
 
 project tree :
 ```css
-network-scanner/
+Automate-network-scanning/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
